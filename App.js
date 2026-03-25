@@ -1798,7 +1798,7 @@ function HomeScreen({ navigation, route }) {
     hasLoaded: guidanceLoaded,
     openGuidance,
     closeGuidance,
-  } = useGuidanceOnce("hasSeenGuidance_Home");
+  } = useGuidanceOnce("hasSeenGuidance_Home", { autoShow: false });
 
   const handleGuidanceLearnMore = useCallback(() => {
     closeGuidance();
